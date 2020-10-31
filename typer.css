@@ -7,14 +7,14 @@
 }
 
 .typer-response {
-    opacity: 0%;
+    opacity: 0;
     font-weight: bold;
     margin-top: 8px;
     font-size: 15px;
 }
 
 .typer-response.typer-response-show {
-    opacity: 100%;
+    opacity: 100;
 }
 
 .typer-text {
