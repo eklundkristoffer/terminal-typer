@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="optional-typer-ui.css" rel="stylesheet">
+    <link href="typer.css" rel="stylesheet">
+    <style>
+        html { height: 100%; }
+        body { background-color: #2A283E; min-height: 100%; }
+        .typer-text, .typer-cursor, .typer-symbol {
+            color: #fff;
+        }
+        .typer-response {
+            color: #77B851;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex min-h-screen items-center">
+        <div class="container mx-auto max-w-4xl px-10">
+            <div class="typer-terminal">
+                <div class="typer-terminal-menu">
+                    <div class="typer-terminal-buttons typer-terminal-buttons-close"></div>
+                    <div class="typer-terminal-buttons typer-terminal-buttons-minimize"></div>
+                    <div class="typer-terminal-buttons typer-terminal-buttons-zoom"></div>
+                </div>
+
+                <div id="typer-screen" class="typer-screen"></div>
+            </div>
+
+            <div class="flex justify-center mt-8">
+                <a href="https://github.com/eklundkristoffer/terminal-typer">
+                    <img src="images/GitHub-Mark-Light-32px.png" />
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="typer.min.js"></script>
+    <script>
+        (function() {
+            var typer = new Type({
+                container: document.getElementById('typer-screen')
+            });
+
+            typer.addLine({
+                text: 'php artisan developer:name',
+                response: '"Kristoffer Eklund"'
+            });
+
+            typer.addLine({
+                text: 'php artisan developer:age',
+                response: '"26"'
+            });
+
+            typer.addLine({
+                text: 'php artisan developer:location',
+                response: '"Stockholm, Sweden"'
+            });
+
+            typer.addLine({
+                text: 'php artisan vendor:publish',
+                response: '"Stockholm, Sweden"'
+            })
+
+            typer.start();
+        })();
+    </script>
+</body>
+</html>

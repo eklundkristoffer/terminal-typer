@@ -1,0 +1,44 @@
+.typer-terminal-menu {
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #bbb;
+    box-sizing: border-box;
+    align-items: center;
+    display: flex;
+    height: 25px;
+}
+
+.typer-terminal-buttons {
+    border: 1px solid #000;
+    border-color: #9d802c;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    height: 10px;
+    width: 10px;
+    left: 6px;
+}
+
+.typer-terminal-buttons.typer-terminal-buttons-close {
+    background-color: #ff3b47;
+}
+
+.typer-terminal-buttons.typer-terminal-buttons-minimize {
+    background-color: #ffc100;
+    left: 11px;
+}
+
+.typer-terminal-buttons.typer-terminal-buttons-zoom {
+    background-color: #00d742;
+    border-color: #049931;
+    left: 16px;
+}
+
+.typer-screen {
+    background-color: rgba(10, 9, 25, .5);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 20px;
+}

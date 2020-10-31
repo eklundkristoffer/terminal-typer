@@ -1,0 +1,52 @@
+.typer-cursor {
+    display: none;
+}
+
+.typer-response:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+.typer-response {
+    opacity: 0%;
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 15px;
+}
+
+.typer-response.typer-response-show {
+    opacity: 100%;
+}
+
+.typer-text {
+    margin-left: 10px;
+}
+
+.typer-item {
+    font-family: monospace;
+    white-space: nowrap;
+    position: relative;
+    font-size: 1.25em;
+    text-align: left;
+    width: 0;
+}
+
+.typer-symbol, .typer-cursor, .typer-text {
+    font-weight: bold;
+}
+
+.typer-item-hidden {
+    opacity: 0;
+}
+
+.typer-item-typing > .typer-cursor {
+    animation: blink 1s infinite;
+    display: inline-block;
+}
+
+@keyframes blink {
+  0% { opacity: 0; }
+  40% { opacity: 0; }
+  50% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { opacity: 0; }
+}
