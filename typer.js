@@ -1,4 +1,4 @@
-class Type {
+class Typer {
     constructor (options = {}) {
         this.options = options;
         this.typingIndex = 0;
@@ -164,30 +164,4 @@ class Type {
     }
 }
 
-(function() {
-    var typer = new Type({
-        container: document.getElementById('typer-screen')
-    });
-
-    typer.addLine({
-        text: 'php artisan developer:name',
-        response: '"Kristoffer Eklund"'
-    });
-
-    typer.addLine({
-        text: 'php artisan developer:age',
-        response: '"26"'
-    });
-
-    typer.addLine({
-        text: 'php artisan developer:location',
-        response: '"Stockholm, Sweden"'
-    });
-
-    typer.addLine({
-        text: 'php artisan vendor:publish',
-        response: '"Stockholm, Sweden"'
-    })
-
-    typer.start();
-})();
+window.Typer = Typer;

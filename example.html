@@ -40,7 +40,7 @@
     <script src="typer.min.js"></script>
     <script>
         (function() {
-            var typer = new Type({
+            var typer = new Typer({
                 container: document.getElementById('typer-screen')
             });
 
@@ -58,11 +58,6 @@
                 text: 'php artisan developer:location',
                 response: '"Stockholm, Sweden"'
             });
-
-            typer.addLine({
-                text: 'php artisan vendor:publish',
-                response: '"Stockholm, Sweden"'
-            })
 
             typer.start();
         })();
